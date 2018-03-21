@@ -33,5 +33,18 @@ class P05TestSuite extends FunSuite {
   test("[ListAppend] reverse an empty list: reverse(List()) = List()") {
     assert(P05.reverse_ListAppend(List()) === List())
   }
+
+  test("[FoldLeft] reverse an ordinary Int list: reverse(List(1, 2, 3, 4)) = List(4, 3, 2, 1)") {
+    assert(P05.reverse_FoldLeft(List(1, 2, 3, 4)) === List(4, 3, 2, 1))
+  }
+  test("[FoldLeft] reverse an ordinary String list: reverse(List(\"hello\", \"world\")) = List(\"world\", \"hello\")") {
+    assert(P05.reverse_FoldLeft(List("hello", "world")) === List("world", "hello"))
+  }
+  test("[FoldLeft] reverse a one-item list: reverse(List(3)) = List(3)") {
+    assert(P05.reverse_FoldLeft(List(3)) === List(3))
+  }
+  test("[FoldLeft] reverse an empty list: reverse(List()) = List()") {
+    assert(P05.reverse_FoldLeft(List()) === List())
+  }
 }
 

@@ -8,8 +8,12 @@ object P05 {
     }
     _reverse(Nil, l)
   }
+
   def reverse_ListAppend[T](l: List[T]): List[T] = l match {
     case e::ls => reverse_ListAppend(ls):::List(e)
     case Nil => Nil
   }
+
+  def reverse_FoldLeft[T](l: List[T]): List[T] =
+    l.foldLeft(List[T]()) { (lr, e) => e::lr }
 }
