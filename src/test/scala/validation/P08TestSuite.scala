@@ -14,7 +14,7 @@ class P08TestSuite extends FunSuite {
   test("compress an ordinary list: compress(List(1, 1, 2, 1, 3, 5, 8)) = List(1, 2, 1, 3, 5, 8)") {
     assert(P08.compress(List(1, 1, 2, 1, 3, 5, 8)) === List(1, 2, 1, 3, 5, 8))
   }
-  test("compress an one-item list: commpress(List(3)) = List(3)") {
+  test("compress an one-item list: compress(List(3)) = List(3)") {
     assert(P08.compress(List(3)) === List(3))
   }
   test("compress an empty list: compress(List()) = List()") {

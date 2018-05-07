@@ -12,7 +12,7 @@ object P08 {
   def compress_TailRecursion[T](l: List[T]): List[T] = {
     def _compress[T](orig: List[T], newl: List[T]): List[T] = (orig, newl) match {
       case (Nil, _) => newl.reverse
-        // more effective using dropWhile
+      // more effective using dropWhile
       case (oh::ol, _) => _compress(orig.dropWhile(_ == oh), oh::newl)
 //      case (oh::ol, nh::_) if (oh == nh) => _compress(ol, newl)
 //      case (oh::ol, _) => _compress(ol, oh::newl)
