@@ -5,26 +5,10 @@ import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 import P23._
-
-object MyListConvertion {
-  implicit def toMyList[T](l: List[T]): MyList[T] = new MyList[T](l)
-
-  class MyList[T](v: List[T]) {
-    def removeAt(i: Int): List[T] = v.splitAt(i) match {
-      case (start, h::tail) => start:::tail
-      case _ => throw new java.util.NoSuchElementException
-    }
-    def isSub(that: List[T]): Boolean = v match {
-        case h :: tail => that.contains(h) && tail.isSub(that.removeAt(that.indexWhere(_ == h)))
-        case Nil => true
-    }
-  }
-}
-
+import common.MyListWrapper._
 
 @RunWith(classOf[JUnitRunner])
 class P23TestSuite extends FunSuite {
-  import MyListConvertion._
   test("randomSelect from an ordinary list: randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))") {
     val res = P23.randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
     assert(res.length === 3)
