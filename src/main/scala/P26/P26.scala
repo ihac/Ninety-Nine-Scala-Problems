@@ -1,7 +1,5 @@
 package P26
 
-import P20._
-
 object P26 {
   def combinations[T](k: Int, l: List[T]): List[List[T]] = {
     if (k < 0 || k > l.length) throw new IllegalArgumentException
