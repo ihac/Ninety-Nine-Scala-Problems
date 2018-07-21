@@ -5,7 +5,6 @@ import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 import P31.P31._
-import common.MyListWrapper._
 
 @RunWith(classOf[JUnitRunner])
 class P31TestSuite extends FunSuite {

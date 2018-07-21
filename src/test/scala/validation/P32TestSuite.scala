@@ -12,6 +12,10 @@ class P32TestSuite extends FunSuite {
     assert(P32.gcd(15, 22) === 1)
   }
 
+  test("gcd of two relatively prime numbers: gcd(35, 64) == 1") {
+    assert(P32.gcd(35, 64) === 1)
+  }
+
   test("gcd of two numbers which are not relatively prime: gcd(8, 12) == 4") {
     assert(P32.gcd(8, 12) === 4)
   }
