@@ -1,5 +1,7 @@
 package common
 
+import scala.language.implicitConversions
+
 object MyListWrapper {
   implicit def toMyList[T](l: List[T]): MyList[T] = new MyList[T](l)
 
