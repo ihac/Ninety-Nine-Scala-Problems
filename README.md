@@ -12,8 +12,8 @@ $ sbt
 
 # test all solutions
 sbt:Ninety-Nine-Scala-Problems> test
-# test the solution of specified problem (P18)
-sbt:Ninety-Nine-Scala-Problems> testOnly validation.P18*
+# test the solution of specified problem (WorkingWithLists.P18)
+sbt:Ninety-Nine-Scala-Problems> testOnly validation.WorkingWithLists.P18*
 ```
 
 ## Scala Versions

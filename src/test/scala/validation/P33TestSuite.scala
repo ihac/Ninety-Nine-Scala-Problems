@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
-import P33.P33._
+import Arithmetic.P33.P33._
 
 @RunWith(classOf[JUnitRunner])
 class P33TestSuite extends FunSuite {

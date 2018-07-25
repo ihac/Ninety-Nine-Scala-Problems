@@ -7,8 +7,8 @@ import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class P38TestSuite extends FunSuite {
-  import P34.P34._
-  import P37.P37._
+  import Arithmetic.P34.P34._
+  import Arithmetic.P37.P37._
   val standardConfig = config(
     Key.exec.minWarmupRuns -> 5,
     Key.exec.maxWarmupRuns -> 10,

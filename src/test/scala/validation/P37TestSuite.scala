@@ -1,6 +1,6 @@
 package validation
 
-import P37.P37._
+import Arithmetic.P37.P37._
 import org.junit.runner.RunWith
 import org.scalacheck.Prop.forAll
 import org.scalacheck.Prop.BooleanOperators
@@ -10,7 +10,7 @@ import org.scalatest.junit.JUnitRunner
 @RunWith(classOf[JUnitRunner])
 class P37TestSuite extends FunSuite {
   test("totient_improve should always be consistent with totient") {
-    import P34.P34._
+    import Arithmetic.P34.P34._
     val prop = forAll { n: Int =>
       (n > 0 && n < 100000) ==> (n.totient == n.totient_improve)
     }

@@ -3,7 +3,7 @@ package validation
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import P27._
+import WorkingWithLists.P27._
 import math._
 
 @RunWith(classOf[JUnitRunner])

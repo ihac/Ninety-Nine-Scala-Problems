@@ -3,7 +3,7 @@ package validation
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import P26._
+import WorkingWithLists.P26._
 import math._
 import common.MyListWrapper._
 
@@ -87,12 +87,12 @@ class P26TestSuite extends FunSuite {
   }
 //  test("[FP] combinations of 3 distinct objects from a two-item set: combinations_FP(3, List(2, 3))") {
 //    intercept[IllegalArgumentException] {
-//      P26.combinations_FP(3, List(2, 3))
+//      WorkingWithLists.P26.combinations_FP(3, List(2, 3))
 //    }
 //  }
 //  test("[FP] combinations of 3 distinct objects from an empty set: combinations_FP(3, List())") {
 //    intercept[IllegalArgumentException] {
-//      P26.combinations_FP(3, List())
+//      WorkingWithLists.P26.combinations_FP(3, List())
 //    }
 //  }
 }

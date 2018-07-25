@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
-import P31.P31._
+import Arithmetic.P31.P31._
 
 @RunWith(classOf[JUnitRunner])
 class P31TestSuite extends FunSuite {

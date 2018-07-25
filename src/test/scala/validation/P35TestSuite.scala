@@ -1,6 +1,6 @@
 package validation
 
-import P35.P35._
+import Arithmetic.P35.P35._
 import org.junit.runner.RunWith
 import org.scalacheck.{Prop, Properties}
 import org.scalacheck.Prop._
@@ -32,7 +32,7 @@ class P35TestSuite extends FunSuite {
 
   test("all factors should be prime") {
     val prop = forAll { (n: Int) =>
-      import P31.P31._
+      import Arithmetic.P31.P31._
       n.primeFactors forall (_.isPrime)
     }
     prop.check()

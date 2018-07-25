@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
-import P01._
+import WorkingWithLists.P01._
 
 @RunWith(classOf[JUnitRunner])
 class P01TestSuite extends FunSuite {

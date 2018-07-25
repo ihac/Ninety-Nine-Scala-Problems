@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
-import P25._
+import WorkingWithLists.P25._
 import common.MyListWrapper._
 
 @RunWith(classOf[JUnitRunner])

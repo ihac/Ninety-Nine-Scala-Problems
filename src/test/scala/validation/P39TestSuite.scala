@@ -1,6 +1,6 @@
 package validation
 
-import P39._
+import Arithmetic.P39._
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
